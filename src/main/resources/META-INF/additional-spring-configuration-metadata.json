@@ -1,0 +1,60 @@
+{
+  "properties": [
+    {
+      "name": "spring.ds.dynamic.druid.filter.stat.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "pers.bingo.datasource.config.druid.stat.DruidFilterConfiguration",
+      "description": "是否开启 StatFilter.",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.ds.dynamic.druid.filter.config.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "pers.bingo.datasource.config.druid.stat.DruidFilterConfiguration",
+      "description": "是否开启 ConfigFilter.",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.ds.dynamic.druid.filter.encoding.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "pers.bingo.datasource.config.druid.stat.DruidFilterConfiguration",
+      "description": "是否开启 EncodingConvertFilter.",
+      "defaultValue": false
+    },
+    {
+      "name": "justbon.ds.dynamic.druid.filter.slf4j.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "pers.bingo.datasource.config.druid.stat.DruidFilterConfiguration",
+      "description": "是否开启 Slf4jLogFilter.",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.ds.dynamic.druid.filter.log4j.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "pers.bingo.datasource.config.druid.stat.DruidFilterConfiguration",
+      "description": "是否开启 Log4jFilter.",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.ds.dynamic.druid.filter.log4j2.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "pers.bingo.datasource.config.druid.stat.DruidFilterConfiguration",
+      "description": "是否开启 Log4j2Filter.",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.ds.dynamic.druid.filter.commons-log.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "pers.bingo.datasource.config.druid.stat.DruidFilterConfiguration",
+      "description": "是否开启 CommonsLogFilter.",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.ds.dynamic.druid.filter.wall.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "pers.bingo.datasource.config.druid.stat.DruidFilterConfiguration",
+      "description": "是否开启 WallFilter.",
+      "defaultValue": false
+    }
+  ]
+}

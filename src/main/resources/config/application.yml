@@ -1,0 +1,28 @@
+# 过滤器设置（第一个stat很重要，没有的话会监控不到SQL）
+spring:
+  ds:
+    basic:
+      druid:
+        initialSize: 5
+        maxActive: 10
+        maxWait: 30000
+        minIdle: 5
+        time-between-eviction-runs-millis: 600000
+        min-evictable-idle-time-millis: 300000
+        test-on-borrow: false
+        test-on-return: false
+        test-while-idle: true
+        validationQuery: 'select 1'
+        keep-alive: true
+        # 长时间不归还连接则强制收回
+        # 回收周期随timeBetweenEvictionRunsMillis进行，如果连接为从连接池借出状态，并且未执行任何sql，并且从借出时间起已超过removeAbandonedTimeout时间，则强制归还连接到连接池中
+        remove-abandoned: true
+        # 80秒后强制回收连接
+        remove-abandoned-timeout-millis: 80
+        # 关闭abanded连接时输出错误日志，这样出现连接泄露时可以通过错误日志定位忘记关闭连接的位置
+        log-abandoned: true
+        pool-prepared-statements: false
+        max-pool-prepared-statement-per-connection-size: 20
+
+#        connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
+#      hikari:
