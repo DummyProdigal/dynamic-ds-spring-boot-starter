@@ -2,7 +2,7 @@ package pers.bingo.datasource.config;
 
 import pers.bingo.datasource.config.druid.DruidDataSourceConfig;
 import pers.bingo.datasource.config.hikari.HikariDataSourceConfig;
-import pers.bingo.datasource.util.EncryptUtil;
+import pers.bingo.datasource.util.AESUtil;
 
 import javax.sql.DataSource;
 
@@ -135,6 +135,6 @@ public class DataSourceProperty {
     }
 
     private String decrypt(String cipherStr) {
-        return EncryptUtil.decrypt(publicKey, cipherStr);
+        return AESUtil.decrypt(publicKey, cipherStr);
     }
 }

@@ -14,7 +14,7 @@ import javax.crypto.spec.SecretKeySpec;
  * @Version 1.0
  * @Modified_By Goubin
  */
-public class EncryptUtil {
+public class AESUtil {
 
     private static Logger log = LoggerFactory.getLogger(DynamicDataSourceAutoConfiguration.class);
 
