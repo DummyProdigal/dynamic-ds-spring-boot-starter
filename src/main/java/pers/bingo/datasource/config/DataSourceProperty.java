@@ -135,6 +135,6 @@ public class DataSourceProperty {
     }
 
     private String decrypt(String cipherStr) {
-        return AESUtil.decrypt(publicKey, cipherStr);
+        return AESUtil.decrypt(cipherStr, publicKey);
     }
 }
